@@ -9,7 +9,7 @@
   - Kyu 7
   - Kyu 8
 
-* Please note that I will add the lower lever kyu at the top when completing my first kata in that difficulty
+#### Please note that I will add the lower lever kyu at the top when completing my first kata in that difficulty
 ``` 
 ex: 
 after completing my first kata of kyu 6 the folder structure will be
