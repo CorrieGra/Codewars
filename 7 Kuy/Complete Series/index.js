@@ -1,3 +1,4 @@
+// ORIGINAL SOLUTION
 function completeSeries(arr) {
     // write your code here
     arr.sort((a, b) => a < b ? -1 : 1);
@@ -16,4 +17,9 @@ function completeSeries(arr) {
     }
 
     return result;
+}
+
+// IMPROVED SOLUTION
+function completeSeriesImproved(arr){
+    return new Set(arr).size !== arr.length ? [0] : [...Array(Math.max(...arr) + 1).keys()];
 }
