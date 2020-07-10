@@ -18,5 +18,3 @@ function count2(_string){
     _string.split('').forEach(v => result[v] ? result[v]++ : result[v] = 1);
     return result;
 }
-
-console.log(count2('aba'), 2);
