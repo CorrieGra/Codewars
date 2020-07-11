@@ -1,5 +1,5 @@
 function validate(password) {
-    return /(\w{6,})/g.test(password);
+    return /([\w^\_{6,}])/g.test(password);
   }
 
   /*
