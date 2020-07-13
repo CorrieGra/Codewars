@@ -1,5 +1,5 @@
 function validate(password) {
-  return /^(?=\w*[a-z])(?=\w*[A-Z])(?=\w*[0-9])(?!=.*[!@#$%^&*])(?=.{6,})/.test(password);
+  return /^(?=\w*[a-z])(?=\w*[A-Z])(?=\w*[0-9])(?=\w{6,})/.test(password);
 }
 
 /*
