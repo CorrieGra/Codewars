@@ -1,13 +1,13 @@
 function validate(password) {
-    return /([\w^\_{6,}])/g.test(password);
-  }
+  return /^(?=\w*[a-z])(?=\w*[A-Z])(?=\w*[0-9])(?=.{6,})/.test(password);
+}
 
-  /*
-    At least six characters long
-    contains a lowercase letter
-    contains an uppercase letter
-    contains a number
-  */
+/*
+  At least six characters long
+  contains a lowercase letter
+  contains an uppercase letter
+  contains a number
+*/
 
 console.log(validate('djI38D55'), 'djI38D55 - Expected true');
 console.log(!validate('a2.d412'), 'a2.d412 - Expected false');
